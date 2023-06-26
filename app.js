@@ -29,6 +29,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors())
+
 app.listen(port, () => {
   console.log(`Rodando na porta ${port}`);
 });
@@ -52,6 +53,7 @@ function compareHash(password, passwordHashed) {
 
 app.get('/', (req, res) => {
   res.status(200).send({ mensagem: 'oi' });
+  console.log('funcionou piazada')
 });
 
 app.post('/users', async (req, res) => {
