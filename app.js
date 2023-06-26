@@ -52,7 +52,7 @@ function compareHash(password, passwordHashed) {
 }
 
 app.get('/', (req, res) => {
-  res.status(200).send({ mensagem: 'oi' });
+  res.status(200).send('hello world');
   console.log('funcionou piazada')
 });
 
